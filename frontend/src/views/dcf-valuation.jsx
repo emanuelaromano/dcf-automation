@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../api";
-import StatusBanner from "../components/status-banner";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setBannerStatusThunk,
@@ -466,6 +465,7 @@ function DCFValuation() {
 
   const handleDcfValuationRequest = async () => {
     // Create new AbortController for this request
+    setValuation(null);
     const controller = new AbortController();
     dispatch(setAbortController(controller));
     dispatch(setProcessingStatus("generating"));
@@ -563,7 +563,6 @@ function DCFValuation() {
 
   return (
     <div className="flex flex-col w-[900px] z-[1]">
-      <StatusBanner />
       <div className="flex flex-col gap-4 w-full mt-20 p-6 border border-gray-300 rounded-xl backdrop-blur-sm bg-white">
         <h2 className="text-2xl font-semibold text-gray-800 text-center">
           Parameters

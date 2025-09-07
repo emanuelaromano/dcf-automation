@@ -44,7 +44,7 @@ function StatusBanner() {
 
   return (
     <div
-      className={`fixed top-6 right-5 z-[1000000] px-6 py-4 rounded-lg border-2 ${config.bgColor} ${config.borderColor} shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out`}
+      className={`fixed top-6 right-5 z-[99999] px-6 py-4 rounded-lg border-2 ${config.bgColor} ${config.borderColor} shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out`}
     >
       <div className="flex items-center gap-3">
         {status.type === "success" && (

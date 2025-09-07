@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
+import StatusBanner from "../components/status-banner";
 import cog from "../assets/cog.svg";
 import { useSelector } from "react-redux";
 
@@ -10,6 +11,7 @@ function Layout() {
   return (
     <div className="flex layout flex-col min-h-screen relative max-w-[100vw] overflow-x-hidden">
       <Navbar />
+      <StatusBanner />
       <div
         className={`absolute top-[-30vh] w-[100vh] h-[100vh] right-[-20vh] z-[0.5] ${processingStatus === "generating" && "animate-slow-spin"}`}
       >
