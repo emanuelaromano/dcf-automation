@@ -39,6 +39,6 @@ export const setBannerStatusThunk = (status) => {
     dispatch(setBannerStatus(status));
     setTimeout(() => {
       dispatch(setBannerStatus(null));
-    }, 3000);
+    }, 2000);
   };
 };
