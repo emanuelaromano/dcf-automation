@@ -13,7 +13,7 @@ A comprehensive web application for automated Discounted Cash Flow (DCF) valuati
 - **RESTful API**: FastAPI backend with comprehensive logging and error handling
 
 ## 🎥 Demo
-
+[Watch Demo Video](https://drive.google.com/file/d/15VWqV_duUXL5yJ-MOWrOzH2n6_51U3RW/view?usp=sharing)
 
 ## 🏗️ Architecture
 
