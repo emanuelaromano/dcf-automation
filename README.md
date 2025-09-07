@@ -16,7 +16,7 @@ A comprehensive web application for automated Discounted Cash Flow (DCF) valuati
 
 📹 **[Watch Demo Video](https://drive.google.com/file/d/1GJpngJhNhCaO8YQfZWhm5zzVYr7yIsne/view?usp=sharing)**
 
-*Click the link above to view the demo video showcasing HireView Prep's features and capabilities.*
+*Click the link above to view the demo video showcasing features and capabilities.*
 
 ## 🏗️ Architecture
 
