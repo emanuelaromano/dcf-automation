@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import cog from "../assets/cog.svg";
 import { useSelector } from "react-redux";
 
@@ -19,7 +18,6 @@ function Layout() {
       <div className="flex-1 max-w-[100vw] overflow-x-hidden p-5 md:p-10 flex flex-col justify-center items-center">
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }
