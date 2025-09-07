@@ -1,0 +1,332 @@
+:root {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: var(--font-weight);
+
+  color-scheme: light;
+  color: #242424;
+
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-weight: 300;
+  --primary-text-color: #242424;
+  --text-white: #FAF9EE;
+  --secondary-text-color: #242424;
+  --primary-background-color: #FAF9EE;
+  --secondary-background-color: #EEEEEE;
+  --tertiary-background-color: #A2AF9B;
+  --tertiary-background-color-opaque: rgba(162, 175, 155, 0.5);
+  --accent-color: #DCCFC0;
+  --accent-color-opaque: rgba(220, 207, 192, 0.5);
+  --error-border-color: #dc2626;
+  --error-background-color: rgba(220, 38, 38, 0.1);
+  --error-text-color: #dc2626;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-background-color);
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+
+a {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  text-decoration: inherit;
+}
+
+.input {
+  border-radius: calc(infinity * 1px);
+  border: 2px solid var(--accent-color);
+  background-color: var(--secondary-background-color);
+  color: var(--primary-text-color);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 0;
+  border: 2px solid var(--tertiary-background-color);
+  outline: none;
+}
+
+/* Page Title and Subtitle */
+.page-title {
+  color: var(--primary-text-color);
+  font-size: 4rem;
+}
+
+.page-subtitle {
+  font-size: var(--text-md);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: var(--primary-text-color);
+  margin-bottom: calc(var(--spacing) * 10);
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+
+
+
+/* Buttons */
+.btn {
+  background: var(--secondary-background-color);
+  border: 2px solid var(--accent-color);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 400;
+  gap: 0.5rem;
+  color: var(--primary-text-color);
+  box-shadow: 0 0 0 0;
+}
+
+.btn:hover, .files-uploaded {
+  background: var(--accent-color-opaque);
+  transform: translate(0, -0.05rem);
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn.generating-btn {
+  background: var(--tertiary-background-color);
+  color: var(--text-white);
+  border-color: var(--tertiary-background-color);
+}
+
+.btn.error {
+  border-color: var(--error-border-color);
+  border-width: 2px;
+  background: var(--error-background-color);
+  color: var(--error-text-color);
+}
+
+.btn.link {
+  border-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+}
+
+.nav-btn {
+  border: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: transparent;
+}
+
+.carousel-btn {
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* Navbar */
+.logo {
+  font-weight: 500;
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: translate(0, -0.05rem);
+  transition: transform 0.1s ease-in-out;
+}
+
+.navbar-link {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  transform: translate(0, -0.05rem);
+  transition: transform 0.1s ease-in-out;
+  background-color: transparent;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+
+@media (max-width: 610px) {
+  .join{
+    flex-direction: column;
+  }
+}
+
+.navbar-link.sub {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+  }
+}
+
+/* DatePicker Custom Styles */
+.react-datepicker {
+  background-color: var(--secondary-background-color) !important;
+  border: 1px solid var(--accent-color) !important;
+  border-radius: 0.75rem !important;
+  font-family: inherit !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.react-datepicker__header {
+  background-color: var(--accent-color-opaque) !important;
+  border-bottom: 1px solid var(--accent-color) !important;
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: var(--primary-text-color) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--accent-color-opaque) !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--tertiary-background-color) !important;
+  color: var(--text-white) !important;
+  border-radius: 0.375rem !important;
+}
+
+.react-datepicker__day--outside-month {
+  color: rgba(36, 36, 36, 0.4) !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: var(--primary-text-color) !important;
+}
+
+.react-datepicker__navigation:hover *::before {
+  border-color: var(--tertiary-background-color) !important;
+}
+
+.react-datepicker-popper {
+  z-index: 10 !important;
+}
+
+.react-datepicker__day--disabled {
+  color: rgba(36, 36, 36, 0.2) !important;
+  cursor: not-allowed !important;
+}
+
+.react-datepicker__day--disabled:hover {
+  background-color: transparent !important;
+}
+.gm-style-iw-c,
+.gm-style-iw {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Tighten the content wrapper */
+.gm-style-iw-d {
+  padding: 0.5rem !important;
+  padding-top: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  max-height: none !important;
+}
+
+/* Remove default margin from content */
+.gm-style-iw-d > div {
+  margin-top: 0 !important;
+}
+
+/* Shrink the close button area */
+.gm-style-iw-chr {
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Shrink the button itself */
+.gm-style-iw-chr button {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Shrink the inner span (the "X" icon) */
+.gm-style-iw-chr button span {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
+}
+
+/* Slow spin animation for cog */
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 8s linear infinite;
+}

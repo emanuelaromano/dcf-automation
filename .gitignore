@@ -1,0 +1,11 @@
+.DS_Store
+.env
+**/venv/
+**/pgdata/
+**/__pycache__/
+**/tmp/
+backend/valuation_simulations.pkl
+backend/agents/output_files/
+backend/slide_generation/output_files/
+**/.venv/
+.venv/
