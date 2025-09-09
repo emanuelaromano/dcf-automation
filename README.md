@@ -14,7 +14,7 @@ A comprehensive web application for automated Discounted Cash Flow (DCF) valuati
 
 ## 🎥 Demo
 
-📹 **[Watch Demo Video](https://drive.google.com/file/d/1GJpngJhNhCaO8YQfZWhm5zzVYr7yIsne/view?usp=sharing)**
+📹 **[Watch Demo Video](https://drive.google.com/file/d/15VWqV_duUXL5yJ-MOWrOzH2n6_51U3RW/view?usp=sharing)**
 
 *Click the link above to view the demo video showcasing features and capabilities.*
 
